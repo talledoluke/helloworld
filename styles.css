@@ -1,16 +1,18 @@
 body {
-background-color: yellow;
+background-color: #141414;
 }
 
 h1  {
-color: black;
+color: White;
 text-align:center;
-text-decoration: underline;
+text-decoration: none;
+  font-family: Poppins;
 font-size: 35px;
 }
 
 p  {
 text-align:center;
+  font-family: Poppins;
 font-size: 20px;     
 }
 
