@@ -103,27 +103,104 @@ document.getElementById("defaultOpen").click();
 <center><h1>MY <mark>PHOTO</mark> EDITS</h1>
 <p>I love taking silly pictures and doing silly edits. </p></center>
 
-<div class="row">
-  <div class="column">
-    <img src="1.png">
-    <img src="2.png">
-    <img src="3.png">
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="3.png" style="width:100%">
+    <div class="text">Me Myself and I during an Online Class</div>
   </div>
-  <div class="column">
-    <img src="underwater.jpg">
-    <img src="ocean.jpg">
-    <img src="wedding.jpg">
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="1.png" style="width:100%">
+    <div class="text">Stickers from Local Skateboard Brands</div>
   </div>
-  <div class="column">
-    <img src="wedding.jpg">
-    <img src="rocks.jpg">
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="2.png" style="width:100%">
+    <div class="text">Me with my favorite hoodie</div>
   </div>
-  <div class="column">
-    <img src="underwater.jpg">
-    <img src="ocean.jpg">
-    <img src="wedding.jpg">
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 8000); // Change image every 2 seconds
+}
+
+</script>
+
+<hr>
+
+<center><h1>MY <mark>JOURNEY</mark></h1>
+<p>I love taking silly pictures and doing silly edits. </p></center>
+
+<div class="timeline">
+  <div class="container left">
+    <div class="content">
+      <h1>2022</h1>
+      <p>Experementing and applying different techniques on both photo and video editing to improve skills</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+       <h1>2021</h1>
+      <p>Start of my first ever skateboarding video project called 'Confiskated'</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h1>2020</h1>
+      <p>I decided to switch up and explore more on film making on skateboarding scene.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h1>2019</h1>
+      <p>I started to learn basic video editing from scratch. </p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+       <h1>2018</h1>
+      <p>I decided to improve more on learning photo editing, to overcome fear of learning different photo editing softwares. </p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+       <h1>2017</h1>
+      <p>This year is when I start understanding more about basic html and css.</p>
+    </div>
   </div>
 </div>
+
+<hr>
 
 </body>
 </html>
