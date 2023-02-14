@@ -2,6 +2,7 @@
 <html>
 <head>
  <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <!-- Top navigation -->
@@ -24,13 +25,83 @@
   </div>
 </div>
 
-<h1>Hi! I am Luke Wilfred Talledo</h1>
+<center><h1>Hi! I am <mark>Luke Wilfred Talledo</mark></h1></center>
  <center><img src="https://i.imgur.com/pYah2QG.png"></img></center>
-<p>I love editing, let me show you... </p>
+<center><p><mark>I love editing</mark>, let me show you... </p></center>
  <center><button class="button button1">Click Here</button></center>
-<br>
-
 <hr>
+
+<center><h1>MY <mark>VIDEO</mark> PROJECTS</h1>
+<p>I love editing videos </p></center>
+
+<
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen"><i class="fa fa-video-camera"></i> Silly Love</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')"><i class="fa fa-video-camera"></i> HelloJehan</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')"><i class="fa fa-video-camera"></i> Stars</button>
+  <button class="tablinks" onclick="openCity(event, 'Untitled')"><i class="fa fa-video-camera"></i> Confiskated</button>
+    <button class="tablinks" onclick="openCity(event, 'Soon')"><i class="fa fa-video-camera"></i> Panic!</button>
+	 <button class="tablinks" onclick="openCity(event, 'Soon')"><i class="fa fa-video-camera"></i> Daydream</button>
+</div>
+
+<div id="London" class="tabcontent">
+  <h1><i class="fa fa-video-camera"></i> Silly Love</h1>
+  <p>Filmed and Edited by me. </p>
+  <iframe width="1000" height="330" src="https://www.youtube.com/embed/LEyWCkUu0cg" title="silly love" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div id="Paris" class="tabcontent">
+    <h1><i class="fa fa-video-camera"></i> HelloJehan</h1>
+  <p>Filmed and Edited by me. </p>
+  <iframe width="1000" height="330" src="https://www.youtube.com/embed/DEJQpqsByuY" title="silly love" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+    <h1><i class="fa fa-video-camera"></i> Stars</h1>
+  <p>Filmed and Edited by me. </p>
+  <iframe width="1000" height="330" src="https://www.youtube.com/embed/NK2bZGO8" title="silly love" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div id="Untitled" class="tabcontent">
+    <h1><i class="fa fa-video-camera"></i> Confiskated</h1>
+  <p>Filmed and Edited by me. </p>
+  <iframe width="1000" height="330" src="https://www.youtube.com/embed/LRR2UA26Uko" title="silly love" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div id="Soon" class="tabcontent">
+    <h1><i class="fa fa-video-camera"></i> Coming Soon</h1>
+  <p>Filmed and Edited by me. </p>
+  
+</div>
+
+<div class="clearfix"></div>
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+</div>
+
+<br>
+<br>
+<hr>
+<center><h1>MY <mark>PHOTO</mark> EDITS</h1>
+<p>I love editing photos, char! </p></center>
 </body>
 </html>
 
