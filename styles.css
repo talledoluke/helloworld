@@ -6,13 +6,14 @@ h1  {
 color: White;
 text-align:center;
 text-decoration: none;
-  font-family: Poppins;
+font-family: Poppins;
 font-size: 35px;
 }
 
 p  {
+color: White;
 text-align:center;
-  font-family: Poppins;
+font-family: Poppins;
 font-size: 20px;     
 }
 
@@ -24,8 +25,9 @@ img {
 }
 
 .topnav {
+  font-family: Poppins;
   position: relative;
-  background-color: #333;
+  background-color: #ff0000;
   overflow: hidden;
 }
 
@@ -41,13 +43,13 @@ img {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #ad0000;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #ad0000;
   color: white;
 }
 
